@@ -42,8 +42,35 @@ document.getElementById('btn-deposit').addEventListener('click', function() {
 // withdraw 
 // add event handler with withdraw button
 document.getElementById('btn-withdraw').addEventListener('click', function() {
-    const withdrawField = document.getElementById('withdraw');
+    const withdrawField = document.getElementById('withdraw-field');
     const withdrawFieldString = withdrawField.value;
     const withdrawFieldAmount = parseFloat(withdrawFieldString);
+    // console.log(withdrawFieldAmount)
+
+
+    // get current with draw ammount
+    const currentWithdraw = document.getElementById('current-withdraw');
+    const currentWithdrawString = currentWithdraw.innerText;
+    const currentWithdrawAmount = parseFloat(currentWithdrawString)
+
     
+
+
+    // calculate new withdraw ammount with current withdraw amount
+    const newWithdrawAmount = currentWithdrawAmount + withdrawFieldAmount
+
+    currentWithdraw.innerText = newWithdrawAmount
+
+    withdrawField.value = ''
+
+
+    //update total balance after withdraw
+
+    const currentTotal = document.getElementById('balance');
+    const currentTotalBalanceString = currentTotal.innerText;
+    const currentTotalBalance = parseFloat(currentTotalBalanceString);
+
+    const totalBalance = currentTotalBalance - currentWithdrawAmount;
+    
+    currentTotal.innerText = totalBalance
 })
