@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center mt-6">
+        Let's get some <span class="text-purple-400">Monnneeey!</span>
+      </h1>
+    </header>
+    <main>
+      <section class="mt-10">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+          <div class="bg-green-500 p-8 rounded-xl">
+            <h2 class="text-2xl">Deposit</h2>
+            <p class="text-5xl">$00</p>
+          </div>
+          <div class="bg-yellow-500 p-8 rounded-xl">
+            <h2 class="text-2xl">Withdraw</h2>
+            <p class="text-5xl">$00</p>
+          </div>
+          <div class="bg-violet-500 p-8 rounded-xl">
+            <h2 class="text-2xl">Balance</h2>
+            <p class="text-5xl">$1230</p>
+          </div>
+        </div>
+      </section>
+      <!-- deposit and withdraw section -->
+      <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+          <div class="bg-fuchsia-400 p-8 rounded-xl">
+            <h2 class="text-2xl mb-3">Please Deposit</h2>
+            <input
+              class="w-9/12 mb-3 px-3"
+              type="text"
+              placeholder="$ Deposit Amount"
+              id="user-email"
+            />
+            <button
+              class="bg-amber-600 px-6 py-2 text-white font-medium rounded-lg hover:bg-sky-700"
+              id="btn-submit"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-indigo-400 p-8 rounded-xl">
+            <h2 class="text-2xl mb-3">Please Withdraw</h2>
+            <input
+              class="w-9/12 mb-3 px-3"
+              type="text"
+              placeholder="$ Withdraw Amount"
+              id="user-email"
+            />
+            <button
+              class="bg-amber-600 px-6 py-2 text-white font-medium rounded-lg hover:bg-sky-700"
+              id="btn-submit"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

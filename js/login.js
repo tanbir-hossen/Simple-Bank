@@ -11,4 +11,12 @@ document.getElementById('btn-submit').addEventListener('click', function() {
     const passwordField = document.getElementById('user-password');
     const userPassword = passwordField.value;
     // console.log(userPassword)
+
+    //verify email and password on the client side
+    if (userEmail === 'sontan@bap.com' && userPassword === 'secret') {
+        window.location.href = 'bank.html'
+    }
+    else {
+        alert('you are not my son!')
+    }
 })
